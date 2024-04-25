@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text1">Convert Temperature</p>
+    <br>
+    <input id="number" type="text" placeholder="Enter Temperature  " value="">
+    <br>
+    <br>
+    <label for="" id="text2"> Select Temperature Type</label>
+    <select name="" id="select">
+        <option value="0">F</option>
+        <option value="1">C</option>
+        
+    </select>
+    <br>
+    <br>
+    <input type="button" value="Select"  id="button" onclick="xxx()">
+    <br>
+    <br>
+    <div id="div">
+<p id="result_text"></p>
+
+    </div>
+
+    <script>
+        function xxx(){
+            var temp,result;
+var select=document.getElementById("select");
+var value=select.value;
+var number=document.getElementById("number");
+var result_text=document.getElementById("result_text");
+var div=document.getElementById("div");
+div.style.visibility="visible";
+ temp=number.value;
+
+
+
+if(value==0){
+    result=(temp-32)*5/9;
+    result_text.innerHTML=result +'°C' ;
+
+}
+else if(value==1){
+    result=(9/5*temp)+32;
+    result_text.innerHTML=result +'°F' ;
+
+
+}
+
+
+        }
+
+    
+    </script>
+</body>
+
+</html>
