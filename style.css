@@ -89,3 +89,15 @@ animation-iteration-count: infinite;
         font-weight: bold;
     }
 }
+
+
+@media screen and (min-width:300px) and (max-width:500px){
+
+
+    
+    body{
+    background-image: url('https://cdn.pixabay.com/photo/2022/10/09/12/07/plant-7508987_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
